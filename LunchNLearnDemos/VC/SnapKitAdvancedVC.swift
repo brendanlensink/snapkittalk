@@ -70,44 +70,14 @@ class SnapKitAdvancedVC: UIViewController {
                 make.top.right.bottom.equalTo(topContainer)
             }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-bottomBox = UIView()
-bottomBox.backgroundColor = .red
-topContainer.addSubview(bottomBox)
-    bottomBox.snp.makeConstraints { make in
-        make.height.equalTo(0)
-        make.top.equalTo(topRightBox)
-        make.left.right.equalTo(view)
-    }
-
-
-
+        bottomBox = UIView()
+        bottomBox.backgroundColor = .red
+        topContainer.addSubview(bottomBox)
+            bottomBox.snp.makeConstraints { make in
+                make.height.equalTo(0)
+                make.top.equalTo(topRightBox)
+                make.left.right.equalTo(view)
+            }
     }
 
     // MARK: Actions
