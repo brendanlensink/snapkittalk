@@ -13,6 +13,7 @@
 		B36E70DA2052FE87007C74F7 /* SnapKitAdvancedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36E70D92052FE87007C74F7 /* SnapKitAdvancedVC.swift */; };
 		B39C797320530B630011B774 /* IBLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39C797220530B630011B774 /* IBLoginVC.swift */; };
 		B39C797620530D690011B774 /* UITextField+BottomBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39C797520530D690011B774 /* UITextField+BottomBorder.swift */; };
+		B39C7978205336530011B774 /* DemoSnippets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39C7977205336530011B774 /* DemoSnippets.swift */; };
 		B3BCDD592052F947003EF0C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCDD582052F947003EF0C5 /* AppDelegate.swift */; };
 		B3BCDD5E2052F947003EF0C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3BCDD5C2052F947003EF0C5 /* Main.storyboard */; };
 		B3BCDD602052F947003EF0C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3BCDD5F2052F947003EF0C5 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		B36E70D92052FE87007C74F7 /* SnapKitAdvancedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitAdvancedVC.swift; sourceTree = "<group>"; };
 		B39C797220530B630011B774 /* IBLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBLoginVC.swift; sourceTree = "<group>"; };
 		B39C797520530D690011B774 /* UITextField+BottomBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+BottomBorder.swift"; sourceTree = "<group>"; };
+		B39C7977205336530011B774 /* DemoSnippets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSnippets.swift; sourceTree = "<group>"; };
 		B3BCDD552052F947003EF0C5 /* LunchNLearnDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunchNLearnDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3BCDD582052F947003EF0C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3BCDD5D2052F947003EF0C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				B39C797520530D690011B774 /* UITextField+BottomBorder.swift */,
+				B39C7977205336530011B774 /* DemoSnippets.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				B39C797620530D690011B774 /* UITextField+BottomBorder.swift in Sources */,
 				B36E70DA2052FE87007C74F7 /* SnapKitAdvancedVC.swift in Sources */,
 				B3BCDD592052F947003EF0C5 /* AppDelegate.swift in Sources */,
+				B39C7978205336530011B774 /* DemoSnippets.swift in Sources */,
 				B36E70D62052FE5B007C74F7 /* SnapKitLoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
