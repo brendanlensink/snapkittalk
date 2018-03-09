@@ -23,7 +23,7 @@ class SnapKitLoginVC: UIViewController {
 
     private lazy var loginButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = UIColor.lightGray.withAlphaComponent(0.1)
+        button.backgroundColor = UIColor.lightGray.withAlphaComponent(0.6)
         button.layer.cornerRadius = 7
         button.setTitle("LOGIN", for: .normal)
         return button
