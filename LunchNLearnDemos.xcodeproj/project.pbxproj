@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A82F950B46C5787D677043C /* Pods_LunchNLearnDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115CFD6F9D81F8E36AB27A66 /* Pods_LunchNLearnDemos.framework */; };
+		B36E70D62052FE5B007C74F7 /* SnapKitLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36E70D52052FE5B007C74F7 /* SnapKitLoginVC.swift */; };
+		B36E70D82052FE6C007C74F7 /* SnapKitBasicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36E70D72052FE6C007C74F7 /* SnapKitBasicVC.swift */; };
+		B36E70DA2052FE87007C74F7 /* SnapKitAdvancedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36E70D92052FE87007C74F7 /* SnapKitAdvancedVC.swift */; };
+		B3BCDD592052F947003EF0C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCDD582052F947003EF0C5 /* AppDelegate.swift */; };
+		B3BCDD5E2052F947003EF0C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3BCDD5C2052F947003EF0C5 /* Main.storyboard */; };
+		B3BCDD602052F947003EF0C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3BCDD5F2052F947003EF0C5 /* Assets.xcassets */; };
+		B3BCDD632052F947003EF0C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3BCDD612052F947003EF0C5 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		115CFD6F9D81F8E36AB27A66 /* Pods_LunchNLearnDemos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunchNLearnDemos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F453C2ED12BA392C853DA7F /* Pods-LunchNLearnDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchNLearnDemos.release.xcconfig"; path = "Pods/Target Support Files/Pods-LunchNLearnDemos/Pods-LunchNLearnDemos.release.xcconfig"; sourceTree = "<group>"; };
+		6C78B5FB7670D636A8C7DCF2 /* Pods-LunchNLearnDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchNLearnDemos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LunchNLearnDemos/Pods-LunchNLearnDemos.debug.xcconfig"; sourceTree = "<group>"; };
+		B36E70D52052FE5B007C74F7 /* SnapKitLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitLoginVC.swift; sourceTree = "<group>"; };
+		B36E70D72052FE6C007C74F7 /* SnapKitBasicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitBasicVC.swift; sourceTree = "<group>"; };
+		B36E70D92052FE87007C74F7 /* SnapKitAdvancedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitAdvancedVC.swift; sourceTree = "<group>"; };
+		B3BCDD552052F947003EF0C5 /* LunchNLearnDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunchNLearnDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3BCDD582052F947003EF0C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3BCDD5D2052F947003EF0C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3BCDD5F2052F947003EF0C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3BCDD622052F947003EF0C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3BCDD642052F947003EF0C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3BCDD522052F947003EF0C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A82F950B46C5787D677043C /* Pods_LunchNLearnDemos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		453F4C077A75AD271B72F923 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C78B5FB7670D636A8C7DCF2 /* Pods-LunchNLearnDemos.debug.xcconfig */,
+				1F453C2ED12BA392C853DA7F /* Pods-LunchNLearnDemos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		661AC973EE49279735A93593 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				115CFD6F9D81F8E36AB27A66 /* Pods_LunchNLearnDemos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B36E70D22052FE37007C74F7 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				B36E70D72052FE6C007C74F7 /* SnapKitBasicVC.swift */,
+				B36E70D52052FE5B007C74F7 /* SnapKitLoginVC.swift */,
+				B36E70D92052FE87007C74F7 /* SnapKitAdvancedVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		B3BCDD4C2052F947003EF0C5 = {
+			isa = PBXGroup;
+			children = (
+				B3BCDD572052F947003EF0C5 /* LunchNLearnDemos */,
+				B3BCDD562052F947003EF0C5 /* Products */,
+				453F4C077A75AD271B72F923 /* Pods */,
+				661AC973EE49279735A93593 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3BCDD562052F947003EF0C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3BCDD552052F947003EF0C5 /* LunchNLearnDemos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3BCDD572052F947003EF0C5 /* LunchNLearnDemos */ = {
+			isa = PBXGroup;
+			children = (
+				B36E70D22052FE37007C74F7 /* VC */,
+				B3BCDD582052F947003EF0C5 /* AppDelegate.swift */,
+				B3BCDD5C2052F947003EF0C5 /* Main.storyboard */,
+				B3BCDD5F2052F947003EF0C5 /* Assets.xcassets */,
+				B3BCDD612052F947003EF0C5 /* LaunchScreen.storyboard */,
+				B3BCDD642052F947003EF0C5 /* Info.plist */,
+			);
+			path = LunchNLearnDemos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3BCDD542052F947003EF0C5 /* LunchNLearnDemos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3BCDD672052F947003EF0C5 /* Build configuration list for PBXNativeTarget "LunchNLearnDemos" */;
+			buildPhases = (
+				F2B1D52735DBC0F1B847694F /* [CP] Check Pods Manifest.lock */,
+				B3BCDD512052F947003EF0C5 /* Sources */,
+				B3BCDD522052F947003EF0C5 /* Frameworks */,
+				B3BCDD532052F947003EF0C5 /* Resources */,
+				FF41A62FEF2C7826632FADB1 /* [CP] Embed Pods Frameworks */,
+				773E2419B49BCC3AEEBA7C3C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LunchNLearnDemos;
+			productName = LunchNLearnDemos;
+			productReference = B3BCDD552052F947003EF0C5 /* LunchNLearnDemos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3BCDD4D2052F947003EF0C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Steamclock;
+				TargetAttributes = {
+					B3BCDD542052F947003EF0C5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B3BCDD502052F947003EF0C5 /* Build configuration list for PBXProject "LunchNLearnDemos" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3BCDD4C2052F947003EF0C5;
+			productRefGroup = B3BCDD562052F947003EF0C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3BCDD542052F947003EF0C5 /* LunchNLearnDemos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3BCDD532052F947003EF0C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3BCDD632052F947003EF0C5 /* LaunchScreen.storyboard in Resources */,
+				B3BCDD602052F947003EF0C5 /* Assets.xcassets in Resources */,
+				B3BCDD5E2052F947003EF0C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		773E2419B49BCC3AEEBA7C3C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LunchNLearnDemos/Pods-LunchNLearnDemos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2B1D52735DBC0F1B847694F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LunchNLearnDemos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF41A62FEF2C7826632FADB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LunchNLearnDemos/Pods-LunchNLearnDemos-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LunchNLearnDemos/Pods-LunchNLearnDemos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3BCDD512052F947003EF0C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36E70D82052FE6C007C74F7 /* SnapKitBasicVC.swift in Sources */,
+				B36E70DA2052FE87007C74F7 /* SnapKitAdvancedVC.swift in Sources */,
+				B3BCDD592052F947003EF0C5 /* AppDelegate.swift in Sources */,
+				B36E70D62052FE5B007C74F7 /* SnapKitLoginVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B3BCDD5C2052F947003EF0C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3BCDD5D2052F947003EF0C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B3BCDD612052F947003EF0C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3BCDD622052F947003EF0C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3BCDD652052F947003EF0C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3BCDD662052F947003EF0C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3BCDD682052F947003EF0C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C78B5FB7670D636A8C7DCF2 /* Pods-LunchNLearnDemos.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GH868RP95T;
+				INFOPLIST_FILE = LunchNLearnDemos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = steamclock.LunchNLearnDemos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3BCDD692052F947003EF0C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F453C2ED12BA392C853DA7F /* Pods-LunchNLearnDemos.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GH868RP95T;
+				INFOPLIST_FILE = LunchNLearnDemos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = steamclock.LunchNLearnDemos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3BCDD502052F947003EF0C5 /* Build configuration list for PBXProject "LunchNLearnDemos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3BCDD652052F947003EF0C5 /* Debug */,
+				B3BCDD662052F947003EF0C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3BCDD672052F947003EF0C5 /* Build configuration list for PBXNativeTarget "LunchNLearnDemos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3BCDD682052F947003EF0C5 /* Debug */,
+				B3BCDD692052F947003EF0C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3BCDD4D2052F947003EF0C5 /* Project object */;
+}
