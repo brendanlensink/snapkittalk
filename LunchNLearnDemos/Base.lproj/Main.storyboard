@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--SnapKit Login-->
+        <!--SK Login-->
         <scene sceneID="jd2-nY-VIz">
             <objects>
                 <viewController id="ecu-vt-B44" customClass="SnapKitLoginVC" customModule="LunchNLearnDemos" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,13 +20,76 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XAF-ki-hm5"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="SnapKit Login" id="Fx3-Vo-uAZ"/>
+                    <tabBarItem key="tabBarItem" title="SK Login" id="Fx3-Vo-uAZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kY7-Yj-pKw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="25" y="-72"/>
         </scene>
-        <!--SnapKit Basic-->
+        <!--IB Login-->
+        <scene sceneID="LqO-db-ae7">
+            <objects>
+                <viewController id="BBQ-5Q-YS5" customClass="IBLoginVC" customModule="LunchNLearnDemos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cdx-gd-edy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fSA-Y2-wX2">
+                                <rect key="frame" x="25" y="120" width="325" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LsW-14-2Dg"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="My9-0A-76u">
+                                <rect key="frame" x="25" y="195" width="325" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="AU6-Yf-mG0"/>
+                                    <constraint firstAttribute="height" constant="50" id="cqz-bx-DBw"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goI-3g-IvJ">
+                                <rect key="frame" x="25" y="270" width="325" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aIF-m5-d9x"/>
+                                </constraints>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fSA-Y2-wX2" firstAttribute="top" secondItem="Nzg-QY-Zzl" secondAttribute="top" constant="100" id="0Am-Pw-SIY"/>
+                            <constraint firstItem="goI-3g-IvJ" firstAttribute="leading" secondItem="My9-0A-76u" secondAttribute="leading" id="3jD-SF-XDk"/>
+                            <constraint firstItem="My9-0A-76u" firstAttribute="top" secondItem="fSA-Y2-wX2" secondAttribute="bottom" constant="25" id="GTj-8M-UK8"/>
+                            <constraint firstItem="fSA-Y2-wX2" firstAttribute="leading" secondItem="Nzg-QY-Zzl" secondAttribute="leading" constant="25" id="KiJ-8b-Oy8"/>
+                            <constraint firstItem="Nzg-QY-Zzl" firstAttribute="trailing" secondItem="goI-3g-IvJ" secondAttribute="trailing" constant="25" id="a2g-0f-weH"/>
+                            <constraint firstItem="goI-3g-IvJ" firstAttribute="trailing" secondItem="My9-0A-76u" secondAttribute="trailing" id="bqX-zi-eJP"/>
+                            <constraint firstItem="goI-3g-IvJ" firstAttribute="top" secondItem="My9-0A-76u" secondAttribute="bottom" constant="25" id="l1r-19-hiu"/>
+                            <constraint firstItem="goI-3g-IvJ" firstAttribute="leading" secondItem="Nzg-QY-Zzl" secondAttribute="leading" constant="25" id="nR5-Ad-EoL"/>
+                            <constraint firstItem="Nzg-QY-Zzl" firstAttribute="trailing" secondItem="fSA-Y2-wX2" secondAttribute="trailing" constant="25" id="zYE-ER-JyW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nzg-QY-Zzl"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="IB Login" id="bWY-eM-bXZ"/>
+                    <connections>
+                        <outlet property="loginButton" destination="goI-3g-IvJ" id="7oc-2u-2TU"/>
+                        <outlet property="passwordField" destination="My9-0A-76u" id="1W9-sh-ht1"/>
+                        <outlet property="usernameField" destination="fSA-Y2-wX2" id="gNU-vi-bmG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZOL-RM-SKn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="686" y="-72"/>
+        </scene>
+        <!--SK Basic-->
         <scene sceneID="KuC-DG-S5f">
             <objects>
                 <viewController id="T1B-nw-oqW" customClass="SnapKitBasicVC" customModule="LunchNLearnDemos" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,11 +99,27 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0y9-aa-Giw"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="SnapKit Basic" id="aE6-sl-GJt"/>
+                    <tabBarItem key="tabBarItem" title="SK Basic" id="aE6-sl-GJt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uoG-6V-iWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="25" y="-735"/>
+        </scene>
+        <!--SKTricky-->
+        <scene sceneID="ZaE-lR-zis">
+            <objects>
+                <viewController id="hmr-A3-8H6" customClass="SnapKitAdvancedVC" customModule="LunchNLearnDemos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wFc-u7-Zwt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="D9t-0S-ac9"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="SKTricky" id="bJN-MZ-nV4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jzb-hz-viQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="687" y="-735"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4Wf-Xj-OoK">
@@ -54,6 +133,8 @@
                     <connections>
                         <segue destination="T1B-nw-oqW" kind="relationship" relationship="viewControllers" id="KT4-sy-j2q"/>
                         <segue destination="ecu-vt-B44" kind="relationship" relationship="viewControllers" id="Zna-cv-6VN"/>
+                        <segue destination="BBQ-5Q-YS5" kind="relationship" relationship="viewControllers" id="914-oE-w9s"/>
+                        <segue destination="hmr-A3-8H6" kind="relationship" relationship="viewControllers" id="VZd-x6-qWC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9b-KD-o4D" userLabel="First Responder" sceneMemberID="firstResponder"/>

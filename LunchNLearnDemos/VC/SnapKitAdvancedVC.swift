@@ -6,4 +6,10 @@
 //  Copyright © 2018 Steamclock. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class SnapKitAdvancedVC: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}

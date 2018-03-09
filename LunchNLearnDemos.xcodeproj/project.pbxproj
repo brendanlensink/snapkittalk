@@ -11,6 +11,8 @@
 		B36E70D62052FE5B007C74F7 /* SnapKitLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36E70D52052FE5B007C74F7 /* SnapKitLoginVC.swift */; };
 		B36E70D82052FE6C007C74F7 /* SnapKitBasicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36E70D72052FE6C007C74F7 /* SnapKitBasicVC.swift */; };
 		B36E70DA2052FE87007C74F7 /* SnapKitAdvancedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36E70D92052FE87007C74F7 /* SnapKitAdvancedVC.swift */; };
+		B39C797320530B630011B774 /* IBLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39C797220530B630011B774 /* IBLoginVC.swift */; };
+		B39C797620530D690011B774 /* UITextField+BottomBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39C797520530D690011B774 /* UITextField+BottomBorder.swift */; };
 		B3BCDD592052F947003EF0C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCDD582052F947003EF0C5 /* AppDelegate.swift */; };
 		B3BCDD5E2052F947003EF0C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3BCDD5C2052F947003EF0C5 /* Main.storyboard */; };
 		B3BCDD602052F947003EF0C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3BCDD5F2052F947003EF0C5 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 		B36E70D52052FE5B007C74F7 /* SnapKitLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitLoginVC.swift; sourceTree = "<group>"; };
 		B36E70D72052FE6C007C74F7 /* SnapKitBasicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitBasicVC.swift; sourceTree = "<group>"; };
 		B36E70D92052FE87007C74F7 /* SnapKitAdvancedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitAdvancedVC.swift; sourceTree = "<group>"; };
+		B39C797220530B630011B774 /* IBLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBLoginVC.swift; sourceTree = "<group>"; };
+		B39C797520530D690011B774 /* UITextField+BottomBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+BottomBorder.swift"; sourceTree = "<group>"; };
 		B3BCDD552052F947003EF0C5 /* LunchNLearnDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunchNLearnDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3BCDD582052F947003EF0C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3BCDD5D2052F947003EF0C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,11 +68,20 @@
 		B36E70D22052FE37007C74F7 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				B39C797220530B630011B774 /* IBLoginVC.swift */,
+				B36E70D92052FE87007C74F7 /* SnapKitAdvancedVC.swift */,
 				B36E70D72052FE6C007C74F7 /* SnapKitBasicVC.swift */,
 				B36E70D52052FE5B007C74F7 /* SnapKitLoginVC.swift */,
-				B36E70D92052FE87007C74F7 /* SnapKitAdvancedVC.swift */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		B39C797420530D5D0011B774 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B39C797520530D690011B774 /* UITextField+BottomBorder.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		B3BCDD4C2052F947003EF0C5 = {
@@ -92,6 +105,7 @@
 		B3BCDD572052F947003EF0C5 /* LunchNLearnDemos */ = {
 			isa = PBXGroup;
 			children = (
+				B39C797420530D5D0011B774 /* Helper */,
 				B36E70D22052FE37007C74F7 /* VC */,
 				B3BCDD582052F947003EF0C5 /* AppDelegate.swift */,
 				B3BCDD5C2052F947003EF0C5 /* Main.storyboard */,
@@ -232,6 +246,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B36E70D82052FE6C007C74F7 /* SnapKitBasicVC.swift in Sources */,
+				B39C797320530B630011B774 /* IBLoginVC.swift in Sources */,
+				B39C797620530D690011B774 /* UITextField+BottomBorder.swift in Sources */,
 				B36E70DA2052FE87007C74F7 /* SnapKitAdvancedVC.swift in Sources */,
 				B3BCDD592052F947003EF0C5 /* AppDelegate.swift in Sources */,
 				B36E70D62052FE5B007C74F7 /* SnapKitLoginVC.swift in Sources */,
