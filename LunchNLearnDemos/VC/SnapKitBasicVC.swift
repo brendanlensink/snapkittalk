@@ -6,4 +6,21 @@
 //  Copyright © 2018 Steamclock. All rights reserved.
 //
 
-import Foundation
+import SnapKit
+import UIKit
+
+class SnapKitBasicVC: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let boxyMcBoxFace = UIView()
+        boxyMcBoxFace.backgroundColor = .blue
+        view.addSubview(boxyMcBoxFace)
+
+        boxyMcBoxFace.snp.makeConstraints { make in
+            make.size.equalTo(100)
+            make.center.equalTo(view)
+        }
+    }
+}

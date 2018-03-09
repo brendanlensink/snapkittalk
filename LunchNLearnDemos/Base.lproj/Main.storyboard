@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--SnapKit Login-->
         <scene sceneID="jd2-nY-VIz">
             <objects>
                 <viewController id="ecu-vt-B44" customClass="SnapKitLoginVC" customModule="LunchNLearnDemos" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,13 +20,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XAF-ki-hm5"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Fx3-Vo-uAZ"/>
+                    <tabBarItem key="tabBarItem" title="SnapKit Login" id="Fx3-Vo-uAZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kY7-Yj-pKw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="25" y="-72"/>
         </scene>
-        <!--Item 1-->
+        <!--SnapKit Basic-->
         <scene sceneID="KuC-DG-S5f">
             <objects>
                 <viewController id="T1B-nw-oqW" customClass="SnapKitBasicVC" customModule="LunchNLearnDemos" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,7 +36,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0y9-aa-Giw"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="aE6-sl-GJt"/>
+                    <tabBarItem key="tabBarItem" title="SnapKit Basic" id="aE6-sl-GJt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uoG-6V-iWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
