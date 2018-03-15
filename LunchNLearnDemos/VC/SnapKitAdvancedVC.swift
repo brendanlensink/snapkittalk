@@ -8,12 +8,30 @@
 
 import UIKit
 
+enum ViewState {
+    case small
+    case medium
+    case large
+}
+
 class SnapKitAdvancedVC: UIViewController {
     private lazy var slider: UIButton = {
         let view = UIButton()
         view.backgroundColor = .blue
         return view
     }()
+
+    private var viewState: ViewState = .medium {
+        didSet {
+            if viewState != oldValue {
+                switch viewState {
+                case .small: layoutSmall()
+                case .medium: layoutMedium()
+                case .large: layoutLarge()
+                }
+            }
+        }
+    }
 
     private var topContainer: UIView!
     private var bottomContainer: UIView!
@@ -29,11 +47,11 @@ class SnapKitAdvancedVC: UIViewController {
         // Set up our tappable slider
 
         view.addSubview(slider)
-            slider.snp.makeConstraints { make in
-                make.height.equalTo(25)
-                make.width.centerX.equalTo(view)
-                make.centerY.equalTo(view.snp.top).offset(view.frame.height / 2)
-            }
+        slider.snp.makeConstraints { make in
+            make.height.equalTo(25)
+            make.width.centerX.equalTo(view)
+            make.centerY.equalTo(view.snp.top).offset(view.frame.height / 2)
+        }
 
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(sliderDragged(_:)))
         slider.addGestureRecognizer(panGesture)
@@ -75,10 +93,12 @@ class SnapKitAdvancedVC: UIViewController {
         bottomBox.backgroundColor = .red
         topContainer.addSubview(bottomBox)
             bottomBox.snp.makeConstraints { make in
-                make.height.equalTo(0)
-                make.top.equalTo(topRightBox)
+                make.top.equalTo(topRightBox.snp.bottom)
+                make.bottom.equalTo(topContainer)
                 make.left.right.equalTo(view)
             }
+
+        view.bringSubview(toFront: slider)
     }
 
     // MARK: Actions
@@ -102,47 +122,52 @@ class SnapKitAdvancedVC: UIViewController {
 
         switch sliderCenter {
         case 0..<smallSize:
-            topLeftBox.snp.remakeConstraints { make in
-                make.top.left.right.equalTo(topContainer)
-                make.height.equalTo(topContainer).multipliedBy(0.5)
-            }
-
-            topRightBox.snp.remakeConstraints { make in
-                make.height.equalTo(topContainer).multipliedBy(0.5)
-                make.bottom.left.right.equalTo(topContainer)
-            }
+            viewState = .small
         case smallSize..<mediumSize:
-            topLeftBox.snp.remakeConstraints { make in
-                make.top.left.bottom.equalTo(topContainer)
-                make.width.equalTo(topContainer).multipliedBy(0.5)
-            }
-
-            topRightBox.snp.remakeConstraints { make in
-                make.top.right.bottom.equalTo(topContainer)
-                make.width.equalTo(topContainer).multipliedBy(0.5)
-            }
-
-            bottomBox.snp.remakeConstraints { make in
-                make.height.equalTo(0)
-            }
+            viewState = .medium
         case mediumSize..<frameHeight:
-            bottomBox.snp.remakeConstraints { make in
-                make.height.equalTo(frameHeight - sliderCenter)
-                make.left.right.bottom.equalTo(topContainer)
-            }
-
-            topLeftBox.snp.remakeConstraints { make in
-                make.width.equalTo(topContainer).multipliedBy(0.5)
-                make.top.left.equalTo(topContainer)
-                make.bottom.equalTo(bottomBox.snp.top)
-            }
-
-            topRightBox.snp.remakeConstraints { make in
-                make.width.equalTo(topContainer).multipliedBy(0.5)
-                make.top.right.equalTo(topContainer)
-                make.bottom.equalTo(bottomBox.snp.top)
-            }
+            viewState = .large
         default: break
+        }
+    }
+
+    private func layoutSmall() {
+        topLeftBox.snp.remakeConstraints { make in
+            make.height.equalTo(topContainer).multipliedBy(0.5)
+            make.top.left.right.equalTo(topContainer)
+        }
+
+        topRightBox.snp.remakeConstraints { make in
+            make.height.equalTo(topContainer).multipliedBy(0.5)
+            make.bottom.left.right.equalTo(topContainer)
+        }
+    }
+
+    private func layoutMedium() {
+        topLeftBox.snp.remakeConstraints { make in
+            make.height.equalTo(topContainer)
+            make.width.equalTo(topContainer).multipliedBy(0.5)
+            make.top.left.equalTo(topContainer)
+        }
+
+        topRightBox.snp.remakeConstraints { make in
+            make.width.equalTo(topContainer).multipliedBy(0.5)
+            make.top.right.equalTo(topContainer)
+            make.bottom.equalTo(topLeftBox)
+        }
+    }
+
+    private func layoutLarge() {
+        topLeftBox.snp.remakeConstraints { make in
+            make.height.equalTo(view).multipliedBy(0.625)
+            make.width.equalTo(topContainer).multipliedBy(0.5)
+            make.top.left.equalTo(topContainer)
+        }
+
+        topRightBox.snp.remakeConstraints { make in
+            make.height.equalTo(view).multipliedBy(0.625)
+            make.width.equalTo(topContainer).multipliedBy(0.5)
+            make.top.right.equalTo(topContainer)
         }
     }
 }
