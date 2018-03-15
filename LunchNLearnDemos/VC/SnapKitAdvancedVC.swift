@@ -47,7 +47,6 @@ class SnapKitAdvancedVC: UIViewController {
             }
 
         bottomContainer = UIView()
-        bottomContainer.backgroundColor = UIColor.lightGray
         view.addSubview(bottomContainer)
             bottomContainer.snp.makeConstraints { make in
                 make.top.equalTo(slider.snp.bottom)

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A82F950B46C5787D677043C /* Pods_LunchNLearnDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115CFD6F9D81F8E36AB27A66 /* Pods_LunchNLearnDemos.framework */; };
+		B33EF6FA205ACCAB00DA3EF1 /* IBAdvancedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33EF6F9205ACCAB00DA3EF1 /* IBAdvancedVC.swift */; };
 		B36E70D62052FE5B007C74F7 /* SnapKitLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36E70D52052FE5B007C74F7 /* SnapKitLoginVC.swift */; };
 		B36E70D82052FE6C007C74F7 /* SnapKitBasicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36E70D72052FE6C007C74F7 /* SnapKitBasicVC.swift */; };
 		B36E70DA2052FE87007C74F7 /* SnapKitAdvancedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36E70D92052FE87007C74F7 /* SnapKitAdvancedVC.swift */; };
@@ -24,6 +25,7 @@
 		115CFD6F9D81F8E36AB27A66 /* Pods_LunchNLearnDemos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunchNLearnDemos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F453C2ED12BA392C853DA7F /* Pods-LunchNLearnDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchNLearnDemos.release.xcconfig"; path = "Pods/Target Support Files/Pods-LunchNLearnDemos/Pods-LunchNLearnDemos.release.xcconfig"; sourceTree = "<group>"; };
 		6C78B5FB7670D636A8C7DCF2 /* Pods-LunchNLearnDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchNLearnDemos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LunchNLearnDemos/Pods-LunchNLearnDemos.debug.xcconfig"; sourceTree = "<group>"; };
+		B33EF6F9205ACCAB00DA3EF1 /* IBAdvancedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBAdvancedVC.swift; sourceTree = "<group>"; };
 		B36E70D52052FE5B007C74F7 /* SnapKitLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitLoginVC.swift; sourceTree = "<group>"; };
 		B36E70D72052FE6C007C74F7 /* SnapKitBasicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitBasicVC.swift; sourceTree = "<group>"; };
 		B36E70D92052FE87007C74F7 /* SnapKitAdvancedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitAdvancedVC.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				B36E70D92052FE87007C74F7 /* SnapKitAdvancedVC.swift */,
 				B36E70D72052FE6C007C74F7 /* SnapKitBasicVC.swift */,
 				B36E70D52052FE5B007C74F7 /* SnapKitLoginVC.swift */,
+				B33EF6F9205ACCAB00DA3EF1 /* IBAdvancedVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				B3BCDD592052F947003EF0C5 /* AppDelegate.swift in Sources */,
 				B39C7978205336530011B774 /* DemoSnippets.swift in Sources */,
 				B36E70D62052FE5B007C74F7 /* SnapKitLoginVC.swift in Sources */,
+				B33EF6FA205ACCAB00DA3EF1 /* IBAdvancedVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

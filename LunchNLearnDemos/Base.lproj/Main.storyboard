@@ -6,11 +6,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--SK Login-->
+        <!--SKLogin-->
         <scene sceneID="jd2-nY-VIz">
             <objects>
                 <viewController id="ecu-vt-B44" customClass="SnapKitLoginVC" customModule="LunchNLearnDemos" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,13 +21,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XAF-ki-hm5"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="SK Login" id="Fx3-Vo-uAZ"/>
+                    <tabBarItem key="tabBarItem" title="SKLogin" id="Fx3-Vo-uAZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kY7-Yj-pKw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="25" y="-72"/>
         </scene>
-        <!--IB Login-->
+        <!--IBLogin-->
         <scene sceneID="LqO-db-ae7">
             <objects>
                 <viewController id="BBQ-5Q-YS5" customClass="IBLoginVC" customModule="LunchNLearnDemos" customModuleProvider="target" sceneMemberID="viewController">
@@ -78,7 +79,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nzg-QY-Zzl"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="IB Login" id="bWY-eM-bXZ"/>
+                    <tabBarItem key="tabBarItem" title="IBLogin" id="bWY-eM-bXZ"/>
                     <connections>
                         <outlet property="loginButton" destination="goI-3g-IvJ" id="7oc-2u-2TU"/>
                         <outlet property="passwordField" destination="My9-0A-76u" id="1W9-sh-ht1"/>
@@ -89,7 +90,69 @@
             </objects>
             <point key="canvasLocation" x="686" y="-72"/>
         </scene>
-        <!--SK Basic-->
+        <!--IBTricky-->
+        <scene sceneID="8Xb-Ww-Mdr">
+            <objects>
+                <viewController id="DWN-83-j1Y" customClass="IBAdvancedVC" customModule="LunchNLearnDemos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="blb-au-AgR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zxV-Ka-2lV" userLabel="Slider">
+                                <rect key="frame" x="0.0" y="306.5" width="375" height="25"/>
+                                <color key="backgroundColor" red="0.37150065100000002" green="0.38538953990000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="vLU-eK-fN9"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kHc-Q9-bWu" userLabel="TopContainer">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="306.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lr2-nk-XOr" userLabel="RightBox">
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="306.5"/>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLa-s9-4sm" userLabel="LeftBox">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="306.5"/>
+                                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ZLa-s9-4sm" firstAttribute="width" secondItem="kHc-Q9-bWu" secondAttribute="width" multiplier="0.5" id="HnV-9n-1mB"/>
+                                    <constraint firstItem="ZLa-s9-4sm" firstAttribute="leading" secondItem="kHc-Q9-bWu" secondAttribute="leading" id="SC0-17-u2D"/>
+                                    <constraint firstItem="lr2-nk-XOr" firstAttribute="top" secondItem="kHc-Q9-bWu" secondAttribute="top" id="U4e-3l-KT1"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZLa-s9-4sm" secondAttribute="bottom" id="ZOf-IX-mbq"/>
+                                    <constraint firstItem="ZLa-s9-4sm" firstAttribute="top" secondItem="kHc-Q9-bWu" secondAttribute="top" id="boa-ds-eao"/>
+                                    <constraint firstAttribute="bottom" secondItem="lr2-nk-XOr" secondAttribute="bottom" id="fkI-aE-3y8"/>
+                                    <constraint firstAttribute="trailing" secondItem="lr2-nk-XOr" secondAttribute="trailing" id="nAd-0F-GX8"/>
+                                    <constraint firstItem="lr2-nk-XOr" firstAttribute="width" secondItem="kHc-Q9-bWu" secondAttribute="width" multiplier="0.5" id="yJW-C1-Iqv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zxV-Ka-2lV" firstAttribute="leading" secondItem="FOc-m9-2Cj" secondAttribute="leading" id="13w-Tp-fSy"/>
+                            <constraint firstItem="kHc-Q9-bWu" firstAttribute="bottom" secondItem="zxV-Ka-2lV" secondAttribute="top" id="FE9-sO-S8q"/>
+                            <constraint firstItem="zxV-Ka-2lV" firstAttribute="trailing" secondItem="FOc-m9-2Cj" secondAttribute="trailing" id="Pla-e4-bf5"/>
+                            <constraint firstItem="FOc-m9-2Cj" firstAttribute="trailing" secondItem="kHc-Q9-bWu" secondAttribute="trailing" id="Qza-NC-J82"/>
+                            <constraint firstItem="FOc-m9-2Cj" firstAttribute="leading" secondItem="kHc-Q9-bWu" secondAttribute="leading" id="aei-Hm-rI0"/>
+                            <constraint firstItem="zxV-Ka-2lV" firstAttribute="centerY" secondItem="FOc-m9-2Cj" secondAttribute="centerY" id="cnj-XA-y13"/>
+                            <constraint firstItem="kHc-Q9-bWu" firstAttribute="top" secondItem="blb-au-AgR" secondAttribute="top" id="lWe-ci-dz8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FOc-m9-2Cj"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="IBTricky" id="BFL-VW-DYA"/>
+                    <connections>
+                        <outlet property="slider" destination="zxV-Ka-2lV" id="tx9-Cq-v8y"/>
+                        <outlet property="sliderCenterY" destination="cnj-XA-y13" id="RCL-LI-z2C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qmO-ft-eRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="-1418.1409295352325"/>
+        </scene>
+        <!--SKBasic-->
         <scene sceneID="KuC-DG-S5f">
             <objects>
                 <viewController id="T1B-nw-oqW" customClass="SnapKitBasicVC" customModule="LunchNLearnDemos" customModuleProvider="target" sceneMemberID="viewController">
@@ -99,7 +162,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0y9-aa-Giw"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="SK Basic" id="aE6-sl-GJt"/>
+                    <tabBarItem key="tabBarItem" title="SKBasic" id="aE6-sl-GJt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uoG-6V-iWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -135,6 +198,7 @@
                         <segue destination="ecu-vt-B44" kind="relationship" relationship="viewControllers" id="Zna-cv-6VN"/>
                         <segue destination="BBQ-5Q-YS5" kind="relationship" relationship="viewControllers" id="914-oE-w9s"/>
                         <segue destination="hmr-A3-8H6" kind="relationship" relationship="viewControllers" id="VZd-x6-qWC"/>
+                        <segue destination="DWN-83-j1Y" kind="relationship" relationship="viewControllers" id="S1q-9T-uma"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9b-KD-o4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
