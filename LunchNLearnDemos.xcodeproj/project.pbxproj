@@ -72,11 +72,11 @@
 		B36E70D22052FE37007C74F7 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				B33EF6F9205ACCAB00DA3EF1 /* IBAdvancedVC.swift */,
 				B39C797220530B630011B774 /* IBLoginVC.swift */,
 				B36E70D92052FE87007C74F7 /* SnapKitAdvancedVC.swift */,
 				B36E70D72052FE6C007C74F7 /* SnapKitBasicVC.swift */,
 				B36E70D52052FE5B007C74F7 /* SnapKitLoginVC.swift */,
-				B33EF6F9205ACCAB00DA3EF1 /* IBAdvancedVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";

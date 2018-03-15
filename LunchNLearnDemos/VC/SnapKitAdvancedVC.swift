@@ -21,6 +21,8 @@ class SnapKitAdvancedVC: UIViewController {
     private var topRightBox: UIView!
     private var bottomBox: UIView!
 
+    // MARK: View Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
